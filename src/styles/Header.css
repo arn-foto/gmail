@@ -13,13 +13,18 @@
 .header__left > img {
 	object-fit: contain;
 	height: 30px;
-
-	margin-top: 10px;
+	padding: 5px;
 }
 
 .header__middle {
 	display: flex;
 	align-items: center;
 	flex: 0.7;
-	color: black;
+	background-color: whitesmoke;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.header__middle > .MuiSvgIcon-root {
+	color: gray;
 }
