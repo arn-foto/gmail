@@ -13,7 +13,10 @@ function Header() {
 				<IconButton>
 					<MenuIcon className="head__menuIcon" />
 				</IconButton>
-				<img src={logo} alt="gmail-logo" />
+				<img
+					src="https://i.pinimg.com/originals/ae/47/fa/ae47fa9a8fd263aa364018517020552d.png"
+					alt="gmail-logo"
+				/>
 			</div>
 			<div className="header__middle">
 				<SearchIcon />
