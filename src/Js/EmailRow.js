@@ -4,10 +4,13 @@ import React from "react";
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import LabelImportantOutlinedIcon from "@material-ui/icons/LabelImportantOutlined";
 import "../styles/EmailRow.css";
+import { useHistory } from "react-router-dom";
 
 function EmailRow({ id, title, subject, description, time }) {
+	const history = useHistory();
+
 	return (
-		<div className="emailRow">
+		<div onClick={() => history.push("/mail")} className="emailRow">
 			<div className="emailRow__options">
 				<Checkbox />
 				<IconButton>
@@ -22,8 +25,8 @@ function EmailRow({ id, title, subject, description, time }) {
 
 			<div className="emailRow__message">
 				<h4>
-					{subject}
-					<span className="emailRow__description">{description}</span>
+					{subject}{" "}
+					<span className="emailRow__description"> - {description}</span>
 				</h4>
 			</div>
 
