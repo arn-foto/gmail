@@ -56,7 +56,7 @@ function EmailList() {
 				<EmailRow
 					title="YO!"
 					subject="Do not open"
-					description="blah blah blah"
+					description="blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"
 					time="5:02pm"
 				/>
 			</div>
