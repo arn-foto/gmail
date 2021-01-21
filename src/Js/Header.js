@@ -21,7 +21,7 @@ function Header() {
 			</div>
 			<div className="header__middle">
 				<SearchIcon />
-				<input placeholder="Sarch mail" type="text" />
+				<input placeholder="Search mail" type="text" />
 				<ArrowDropDownIcon className="Header__inputCaret" />
 			</div>
 			<div className="header__right">

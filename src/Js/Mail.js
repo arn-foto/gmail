@@ -12,6 +12,7 @@ import PrintIcon from "@material-ui/icons/Print";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { useHistory } from "react-router-dom";
+import "../styles/Mail.css";
 
 function Mail() {
 	const history = useHistory();
@@ -65,8 +66,6 @@ function Mail() {
 						<ExitToAppIcon />
 					</IconButton>
 				</div>
-
-				<div className="mail__toolsRight"></div>
 			</div>
 			<h1>howdy</h1>
 		</div>
