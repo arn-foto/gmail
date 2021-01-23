@@ -75,6 +75,7 @@ function Mail() {
 					<p>6:16pm</p>
 				</div>
 				<div className="mail__message"></div>
+				this is a very important message.
 			</div>
 		</div>
 	);
