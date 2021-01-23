@@ -7,10 +7,10 @@ export const mailSlice = createSlice({
 	},
 	reducers: {
 		openSendMessage: (state) => {
-			state.openSendMessage = true;
+			state.sendMessageIsOpen = true;
 		},
 		closeSendMessage: (state) => {
-			state.closeSendMessage = false;
+			state.sendMessageIsOpen = false;
 		},
 	},
 });
