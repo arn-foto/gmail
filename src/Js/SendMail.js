@@ -7,6 +7,10 @@ import { useForm } from "react-hook-form";
 function SendMail() {
 	const { register, handleSubmit, watch, errors } = useForm();
 
+	const onSubmit = (formData) => {
+		console.log(formData);
+	};
+
 	return (
 		<div className="sendMail">
 			<div className="sendMail__header">
@@ -14,15 +18,33 @@ function SendMail() {
 				<CloseIcon className="sendMail__close" />
 			</div>
 
-			<form>
-				<input placeholder="To" type="text" />
-				<input placeholder="Subject" type="text" />
+			<form onSubmit={handleSubmit(onSubmit)}>
 				<input
+					name="to"
+					placeholder="To"
+					type="text"
+					ref={register({ required: true })}
+				/>
+				{errors.to && <p className="sendMail__error"> Address is required!</p>}
+				<input
+					name="subject"
+					placeholder="Subject"
+					type="text"
+					ref={register({ required: true })}
+				/>
+				{errors.subject && (
+					<p className="sendMail__error"> Subject is required!</p>
+				)}
+				<input
+					name="message"
 					className="sendMail__message"
 					placeholder="Message..."
 					type="text"
+					ref={register({ required: true })}
 				/>
-
+				{errors.message && (
+					<p className="sendMail__error"> Message is required!</p>
+				)}
 				<div className="sendMail__options">
 					<Button
 						className="sendMail__send"
