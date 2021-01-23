@@ -72,10 +72,10 @@ function Mail() {
 					<h2>subject</h2>
 					<LabelImportantIcon className="mail__important" />
 					<p>title</p>
-					<p>6:16pm</p>
+					<p className="mail__time">6:16pm</p>
 				</div>
 				<div className="mail__message"></div>
-				this is a very important message.
+				<p>this is a very important message.</p>
 			</div>
 		</div>
 	);
