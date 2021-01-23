@@ -12,9 +12,9 @@ function SendMail() {
 			</div>
 
 			<form>
-				<input type="text" />
-				<input type="text" />
-				<input type="text" />
+				<input placeholder="To" type="text" />
+				<input placeholder="Subject" type="text" />
+				<input placeholder="Message..." type="text" />
 
 				<div className="sendMail__options">
 					<Button

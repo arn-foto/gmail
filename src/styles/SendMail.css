@@ -43,3 +43,10 @@
 	text-transform: capitalize !important;
 	margin: 15px !important;
 }
+.sendMail > form > input {
+	height: 30px;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid whitesmoke;
+	outline: none;
+}
