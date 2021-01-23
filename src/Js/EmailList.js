@@ -19,7 +19,7 @@ function EmailList() {
 	const [emails, setEmails] = useState([]);
 
 	useEffect(() => {
-		db.collection("email")
+		db.collection("emails")
 			.orderBy("timestamp", "desc")
 			.onSnapshot((snapshot) =>
 				setEmails(
@@ -69,8 +69,15 @@ function EmailList() {
 			</div>
 
 			<div className="emailList__list">
-				{emails.map((email) => (
-					<EmailRow />
+				{emails.map(({ id, data: { to, subject, message, timestamp } }) => (
+					<EmailRow
+						id={id}
+						key={id}
+						title={to}
+						subject={subject}
+						description={message}
+						time={new Date(timestamp?.seconds * 1000).toUTCString()}
+					/>
 				))}
 			</div>
 		</div>
