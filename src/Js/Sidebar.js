@@ -27,7 +27,7 @@ function Sidebar() {
 				Icon={InboxIcon}
 				title="Inbox"
 				number={87}
-				selected={true}
+				// selected={true}
 			/>
 			<SidebarOption Icon={StarIcon} title="Starred" number={87} />
 			<SidebarOption Icon={AccessTimeIcon} title="Snoozed" number={87} />
