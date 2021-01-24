@@ -46,7 +46,7 @@ function EmailList() {
 						<MoreVertIcon />
 					</IconButton>
 				</div>
-				<div classNanme="emaillist__settingsright">
+				<div className="emaillist__settingsright">
 					<IconButton>
 						<ChevronLeftIcon />
 					</IconButton>

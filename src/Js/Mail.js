@@ -19,7 +19,7 @@ function Mail() {
 	return (
 		<div className="mail">
 			<div className="mail__tools">
-				<div ClassName="mail__toolsLeft">
+				<div className="mail__toolsLeft">
 					<IconButton onClick={() => history.push("/")}>
 						<ArrowBackIcon />
 					</IconButton>
