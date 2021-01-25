@@ -69,16 +69,27 @@ function EmailList() {
 			</div>
 
 			<div className="emailList__list">
-				{emails.map(({ id, data: { to, subject, message, timestamp } }) => (
-					<EmailRow
-						id={id}
-						key={id}
-						title={to}
-						subject={subject}
-						description={message}
-						time={new Date(timestamp?.seconds * 1000).toUTCString()}
-					/>
-				))}
+				{emails.map(
+					({ id, data: { to, subject, message, timestamp, description } }) => (
+						<EmailRow
+							id={id}
+							key={id}
+							title={to}
+							subject={subject}
+							description={message}
+							time={new Date(timestamp?.seconds * 1000).toUTCString()}
+						/>
+					)
+				)}
+			</div>
+
+			<div className="emailList__list">
+				<EmailRow
+					title="YO!"
+					subject="Do not open"
+					description="blah blah blah"
+					time="5:02pm"
+				/>
 			</div>
 		</div>
 	);
