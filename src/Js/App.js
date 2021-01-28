@@ -9,7 +9,7 @@ import EmailList from "../Js/EmailList";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
 import { selectSendMessageIsOpen } from "../features/mailSlice";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
 	const sendMessageIsOpen = useSelector(selectSendMessageIsOpen);
