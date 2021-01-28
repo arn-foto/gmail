@@ -80,15 +80,6 @@ function EmailList() {
 					/>
 				))}
 			</div>
-
-			<div className="emailList__list">
-				<EmailRow
-					title="YO!"
-					subject="Do not open"
-					description="blah blah blah"
-					time="5:02pm"
-				/>
-			</div>
 		</div>
 	);
 }

@@ -17,7 +17,7 @@ function SendMail() {
 		db.collection("emails").add({
 			to: formData.to,
 			subject: formData.subject,
-			messsage: formData.message,
+			message: formData.message,
 			timestamp: firebase.firestore.FieldValue.serverTimestamp(),
 		});
 		dispatch(closeSendMessage());
