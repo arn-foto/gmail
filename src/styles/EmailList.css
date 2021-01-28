@@ -1,6 +1,12 @@
 .emailList {
 	flex: 1;
 	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.emailList::-webkit-scrollbar {
+	display: none;
 }
 
 .emailList__settings {
@@ -19,4 +25,8 @@
 	top: 0;
 	display: flex;
 	background-color: white;
+}
+
+.emailList__list {
+	padding-bottom: 20%;
 }
