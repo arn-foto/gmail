@@ -14,7 +14,7 @@ function Login() {
 			.then(({ user }) => {
 				dispatch(
 					login({
-						displayname: user.displayName,
+						displayName: user.displayName,
 						email: user.email,
 						photoUrl: user.photoURL,
 					})
@@ -30,7 +30,7 @@ function Login() {
 					src="https://static.dezeen.com/uploads/2020/10/gmail-google-logo-rebrand-workspace-design_dezeen_2364_col_0.jpg"
 					alt="Gmail-Clone"
 				/>
-				<Button variant="contained" color="primary" onclick={signIn}>
+				<Button variant="contained" color="primary" onClick={signIn}>
 					Login
 				</Button>
 			</div>
