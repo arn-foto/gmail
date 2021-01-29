@@ -20,6 +20,9 @@ In this demo a user can:
 - user photo is populated by one on their google account
 - log out by clicking your avatar
 
-https://www.loom.com/share/3e4864144cd2411bb9daaff81861f7cc
+<a href="https://www.loom.com/share/3e4864144cd2411bb9daaff81861f7cc">
+    <p>Gmail (clone) - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/3e4864144cd2411bb9daaff81861f7cc-with-play.gif">
+  </a>
 
 # This is NOT a real Gmail and is created to show functionality of certain technologies applied throughout this demo.
