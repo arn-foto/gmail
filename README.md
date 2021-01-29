@@ -20,6 +20,6 @@ In this demo a user can:
 - user photo is populated by one on their google account
 - log out by clicking your avatar
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/3e4864144cd2411bb9daaff81861f7cc" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+https://www.loom.com/share/3e4864144cd2411bb9daaff81861f7cc
 
 # This is NOT a real Gmail and is created to show functionality of certain technologies applied throughout this demo.
