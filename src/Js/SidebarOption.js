@@ -13,3 +13,6 @@ function SidebarOption({ Icon, title, number, selected }) {
 }
 
 export default SidebarOption;
+
+
+// <SidebarOption Icon={StarIcon} title="Starred" number={87} />
