@@ -25,9 +25,6 @@
 	border-radius: 5px;
 }
 
-.header__middle > .MuiSvgIcon-root {
-	color: grey;
-}
 .header__middle > input {
 	border: none;
 	outline: none;
